@@ -94,11 +94,9 @@ async def who(m: Message):
         username = "не удалось получить"
 
     await m.answer(
-        "🔎 Данные отправителя:\\n"
-        f"Имя: {full_name}\\n"
-        f"Username: {username}\\n"
-        f"ID: {sender_id}\\n"
-        "Номер телефона: недоступен через Telegram Bot API без добровольно отправленного контакта."
+        f"Имя: {full_name}\n"
+        f"Username: {username}\n"
+        f"ID: {sender_id}"
     )
 
 
